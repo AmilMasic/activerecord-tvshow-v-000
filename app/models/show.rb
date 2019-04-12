@@ -8,7 +8,7 @@ class Show <ActiveRecord::Base
   end
 
   def self.lowest_rating
-    self.minimum(:rating).first
+    self.minimum(:rating)
   end
 
   def least_popular_show
